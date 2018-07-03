@@ -1,18 +1,25 @@
+# initializing blockchain list
 blockchain = []
 
 # extract last value from blockchain
-
-
 def get_last_block_value():
+    """Returns the last value of the Blockchain"""
     return blockchain[-1]
 
 
 # append latest value to blockchain
 def add_value(transaction_amount, last_transaction=[1]):
+    """Append a new value and the last value to the latest block
+    
+    Arguments:
+        :transaction_amount: The amount that should be added.
+        :last_transaction: The last blockchain transaction value. (default [1])
+    """
     blockchain.append([last_transaction, transaction_amount])
 
 
 def get_user_input():
+    """Returns the input of the user (a new transaction amount) as a float. """
     return float(input('Your transaction amount please: '))
 
 
