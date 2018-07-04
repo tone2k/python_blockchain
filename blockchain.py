@@ -43,10 +43,9 @@ while True:
     print('1: Add a new transaction value')
     print('2: Output the blockchain blocks')
     user_choice = get_user_choice()
-    if user_choice == '1':
+    if user_choice == 1:
         tx_amount = get_transaction_value()
-        add_value(transaction_amount=tx_amount,
-          last_transaction=get_last_block_value())
+        add_value(tx_amount, get_last_block_value())
     else:
         print_blockchain_elements()
 
