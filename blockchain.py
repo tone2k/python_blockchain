@@ -35,4 +35,12 @@ tx_amount = get_user_input()
 add_value(transaction_amount=tx_amount,
           last_transaction=get_last_block_value())
 
-print(blockchain)
+
+for block in blockchain:
+    print('Outputting Block')
+    print(block)
+
+
+print('Done!')
+
+
