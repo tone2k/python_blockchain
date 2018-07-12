@@ -44,10 +44,10 @@ while True:
     print('1: Add a new transaction value')
     print('2: Output the blockchain blocks')
     user_choice = get_user_choice()
-    if user_choice == 1:
+    if user_choice == '1':
         tx_amount = get_transaction_value()
         add_value(tx_amount, get_last_block_value())
-    elif user_choice == 2:
+    elif user_choice == '2':
         print_blockchain_elements()
     else:
         print('Input was invlaid, please pick a value from the list!')
