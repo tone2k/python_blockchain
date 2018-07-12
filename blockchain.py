@@ -20,7 +20,8 @@ def add_value(transaction_amount, last_transaction=[1]):
 
 def get_transaction_value():
     """Returns the input of the user (a new transaction amount) as a float. """
-    return float(input('Your transaction amount please: '))
+    user_input = float(input('Your transaction amount please: '))
+    return user_input
 
 def get_user_choice():
     user_input = input('Your choice: ')
@@ -46,7 +47,7 @@ while True:
     if user_choice == 1:
         tx_amount = get_transaction_value()
         add_value(tx_amount, get_last_block_value())
-    elif user_choice == '2':
+    elif user_choice == 2:
         print_blockchain_elements()
     else:
         print('Input was invlaid, please pick a value from the list!')
