@@ -54,6 +54,7 @@ while True:
         break
     else:
         print('Input was invlaid, please pick a value from the list!')
+    print('Choice registered')
 
 
 print('Done!')
