@@ -49,6 +49,8 @@ while True:
         add_value(tx_amount, get_last_block_value())
     elif user_choice == '2':
         print_blockchain_elements()
+    elif user_choice == 'q':
+        break
     else:
         print('Input was invlaid, please pick a value from the list!')
 
