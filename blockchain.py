@@ -46,12 +46,13 @@ def verify_chain():
         if block_index == 0:
             block_index += 1
             continue
-        if block[0] == blockchain[block_index - 1]:
+        elif block[0] == blockchain[block_index - 1]:
             is_valid = True
         else: 
             is_valid = False
             break
-        return is_valid
+        block_index += 1
+    return is_valid
 
 
 while True:
